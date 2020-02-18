@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "dc17b31286f02f1c1e15";
+/******/ 	var hotCurrentHash = "e60cac50a0036f55fc47";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -258,7 +258,7 @@
 /******/ 				};
 /******/ 			});
 /******/ 			hotUpdate = {};
-/******/ 			var chunkId = "trial";
+/******/ 			var chunkId = "js/dashboard";
 /******/ 			// eslint-disable-next-line no-lone-blocks
 /******/ 			{
 /******/ 				hotEnsureUpdateChunk(chunkId);
@@ -790,20 +790,19 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return hotCreateRequire("./src/trial.ts")(__webpack_require__.s = "./src/trial.ts");
+/******/ 	return hotCreateRequire("./src/dashboard.js")(__webpack_require__.s = "./src/dashboard.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/trial.ts":
-/*!**********************!*\
-  !*** ./src/trial.ts ***!
-  \**********************/
+/***/ "./src/dashboard.js":
+/*!**************************!*\
+  !*** ./src/dashboard.js ***!
+  \**************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-eval("\nfunction add(x, y) {\n    return x + y;\n}\n\n\n//# sourceURL=webpack:///./src/trial.ts?");
+eval("alert(\"Dashboard\")\n\n//# sourceURL=webpack:///./src/dashboard.js?");
 
 /***/ })
 

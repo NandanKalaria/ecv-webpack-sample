@@ -18,7 +18,21 @@ module.exports = {
             {
                 test: /\.ts$/,
                 use: 'ts-loader',
-            }
+            },
+            {
+                test: /\.less$/,
+                use: [
+                  {
+                    loader: 'style-loader', // creates style nodes from JS strings
+                  },
+                  {
+                    loader: 'css-loader', // translates CSS into CommonJS
+                  },
+                  {
+                    loader: 'less-loader', // compiles Less to CSS
+                  },
+                ],
+              },
         ],
     },
 
@@ -27,9 +41,9 @@ module.exports = {
     },
 
     entry: {
-        home: './src/index.js',
-        dashboard: './src/dashboard.js',
-        trial: './src/trial.ts'
+        'js/home': './src/index.js',
+        'js/dashboard': './src/dashboard.js',
+        'ts/trial': './src/trial.ts'
     },
     output: {
         path: path.resolve(__dirname, 'build'),

@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "dc17b31286f02f1c1e15";
+/******/ 	var hotCurrentHash = "e60cac50a0036f55fc47";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -258,7 +258,7 @@
 /******/ 				};
 /******/ 			});
 /******/ 			hotUpdate = {};
-/******/ 			var chunkId = "home";
+/******/ 			var chunkId = "ts/trial";
 /******/ 			// eslint-disable-next-line no-lone-blocks
 /******/ 			{
 /******/ 				hotEnsureUpdateChunk(chunkId);
@@ -790,43 +790,20 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return hotCreateRequire("./src/index.js")(__webpack_require__.s = "./src/index.js");
+/******/ 	return hotCreateRequire("./src/trial.ts")(__webpack_require__.s = "./src/trial.ts");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/webpack/buildin/harmony-module.js":
-/*!*******************************************!*\
-  !*** (webpack)/buildin/harmony-module.js ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("module.exports = function(originalModule) {\n\tif (!originalModule.webpackPolyfill) {\n\t\tvar module = Object.create(originalModule);\n\t\t// module.parent = undefined by default\n\t\tif (!module.children) module.children = [];\n\t\tObject.defineProperty(module, \"loaded\", {\n\t\t\tenumerable: true,\n\t\t\tget: function() {\n\t\t\t\treturn module.l;\n\t\t\t}\n\t\t});\n\t\tObject.defineProperty(module, \"id\", {\n\t\t\tenumerable: true,\n\t\t\tget: function() {\n\t\t\t\treturn module.i;\n\t\t\t}\n\t\t});\n\t\tObject.defineProperty(module, \"exports\", {\n\t\t\tenumerable: true\n\t\t});\n\t\tmodule.webpackPolyfill = 1;\n\t}\n\treturn module;\n};\n\n\n//# sourceURL=webpack:///(webpack)/buildin/harmony-module.js?");
-
-/***/ }),
-
-/***/ "./src/index.js":
+/***/ "./src/trial.ts":
 /*!**********************!*\
-  !*** ./src/index.js ***!
+  !*** ./src/trial.ts ***!
   \**********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var _text_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./text.js */ \"./src/text.js\");\n\n\n\nObject(_text_js__WEBPACK_IMPORTED_MODULE_0__[\"writeToScreen\"])()\nObject(_text_js__WEBPACK_IMPORTED_MODULE_0__[\"changeH1\"])(\"Hola Amigos, izza hot reloading!\")\n\n\nif(module && module.hot) module.hot.accept()\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node_modules/webpack/buildin/harmony-module.js */ \"./node_modules/webpack/buildin/harmony-module.js\")(module)))\n\n//# sourceURL=webpack:///./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/text.js":
-/*!*********************!*\
-  !*** ./src/text.js ***!
-  \*********************/
-/*! exports provided: writeToScreen, changeH1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"writeToScreen\", function() { return writeToScreen; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"changeH1\", function() { return changeH1; });\nfunction writeToScreen(){\n    document.write('Hello world from Webpack!')\n}\n\nfunction changeH1(text){\n    document.querySelector('h1').innerText = text + '!'\n}\n\n\n//# sourceURL=webpack:///./src/text.js?");
+eval("\nfunction add(x, y) {\n    return x + y;\n}\n\n\n//# sourceURL=webpack:///./src/trial.ts?");
 
 /***/ })
 
