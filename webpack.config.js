@@ -12,9 +12,24 @@ const webpack = require('webpack')
 
 module.exports = {
     mode: 'development',
+
+    module:{
+        rules:[
+            {
+                test: /\.ts$/,
+                use: 'ts-loader',
+            }
+        ],
+    },
+
+    resolve: {
+        extensions: ['.ts', '.js']
+    },
+
     entry: {
         home: './src/index.js',
-        dashboard: './src/dashboard.js'
+        dashboard: './src/dashboard.js',
+        trial: './src/trial.ts'
     },
     output: {
         path: path.resolve(__dirname, 'build'),
